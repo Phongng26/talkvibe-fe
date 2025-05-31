@@ -1,0 +1,119 @@
+
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "avatar": "/placeholder.svg",
+      "level": "Intermediate",
+      "practiceHours": 48,
+      "sessionsCompleted": 15,
+      "achievements": ["First Session", "Week Streak", "10 Hours", "Social Butterfly"],
+      "joinDate": "2024-01-15",
+      "bio": "Love practicing English and meeting new people from around the world!",
+      "learningGoals": ["Improve pronunciation", "Expand vocabulary", "Build confidence"],
+      "country": "Vietnam",
+      "timezone": "UTC+7"
+    },
+    {
+      "id": "2", 
+      "name": "Sarah Johnson",
+      "email": "sarah@example.com",
+      "avatar": "/placeholder.svg",
+      "level": "Advanced",
+      "practiceHours": 120,
+      "sessionsCompleted": 45,
+      "achievements": ["Expert Speaker", "Mentor", "100 Hours", "Global Friend"],
+      "joinDate": "2023-11-20",
+      "bio": "Business professional helping others improve their English skills.",
+      "learningGoals": ["Help others learn", "Master business English"],
+      "country": "United States",
+      "timezone": "UTC-5"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "1",
+      "name": "Business English Practice",
+      "topic": "Business",
+      "participantCount": 8,
+      "maxParticipants": 12,
+      "level": "Intermediate",
+      "isPublic": true,
+      "host": "Sarah Johnson",
+      "description": "Practice professional English skills and business communication.",
+      "tags": ["Business", "Professional", "Networking"],
+      "createdAt": "2024-01-20T10:00:00Z",
+      "participants": ["1", "2", "3", "4", "5", "6", "7", "8"]
+    }
+  ],
+  "notifications": [
+    {
+      "id": "1",
+      "userId": "1",
+      "type": "invite",
+      "title": "Room Invitation",
+      "message": "Sarah invited you to join 'Business English Practice'",
+      "timestamp": "2024-01-20T15:30:00Z",
+      "read": false,
+      "data": {
+        "roomId": "1",
+        "inviterId": "2"
+      }
+    },
+    {
+      "id": "2",
+      "userId": "1",
+      "type": "achievement",
+      "title": "Achievement Unlocked!",
+      "message": "You completed 10 practice sessions!",
+      "timestamp": "2024-01-20T14:00:00Z",
+      "read": false,
+      "data": {
+        "achievement": "10_sessions"
+      }
+    }
+  ],
+  "practiceHistory": [
+    {
+      "id": "1",
+      "userId": "1",
+      "roomId": "1",
+      "roomName": "Business English Practice",
+      "duration": 45,
+      "topic": "Business",
+      "participants": ["Sarah Johnson", "Mike Chen", "Emma Wilson"],
+      "date": "2024-01-20T14:00:00Z",
+      "feedback": {
+        "rating": 5,
+        "notes": "Great practice session! Learned a lot about presentation skills."
+      }
+    },
+    {
+      "id": "2",
+      "userId": "1", 
+      "roomId": "2",
+      "roomName": "Casual Conversation",
+      "duration": 30,
+      "topic": "General",
+      "participants": ["David Garcia", "Lisa Park"],
+      "date": "2024-01-19T16:30:00Z",
+      "feedback": {
+        "rating": 4,
+        "notes": "Fun conversation about travel experiences."
+      }
+    }
+  ],
+  "progressData": {
+    "weeklyHours": [2, 3, 4, 3, 5, 6, 4],
+    "monthlyHours": [15, 18, 12, 20, 22, 19, 25, 28, 30, 24, 26, 32],
+    "skillProgress": {
+      "speaking": 75,
+      "listening": 85,
+      "vocabulary": 60,
+      "grammar": 70,
+      "pronunciation": 65
+    }
+  }
+}
